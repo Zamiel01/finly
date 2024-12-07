@@ -1,23 +1,15 @@
 {
   "name": "finly",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "vercel dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "daisyui": "^4.12.14",
-    "nodemon": "^3.1.7",
-    "postcss": "^8.4.49",
-    "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.16"
-  },
+  "description": "A Node.js app for deployment on Vercel",
   "dependencies": {
     "@vercel/node": "^3.2.28",
     "ejs": "^3.1.10",
@@ -25,5 +17,13 @@
     "mongodb": "^6.11.0",
     "mongoose": "^8.8.4",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.14",
+    "nodemon": "^3.1.7",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.16"
   }
 }
